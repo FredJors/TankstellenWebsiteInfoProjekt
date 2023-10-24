@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fb7ff51a1aed7d72657ad2e0ec70533d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fb7ff51a1aed7d72657ad2e0ec70533d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fb7ff51a1aed7d72657ad2e0ec70533d = L.map(
+                "map_fb7ff51a1aed7d72657ad2e0ec70533d",
+                {
+                    center: [52.1391513, 11.1028755],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a87ff60eba84f9b3fa8ff2ebb3838285 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var circle_f064a2808e69ad2d6a66e3ec1d58b320 = L.circle(
+                [52.1391513, 11.1028755],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var marker_c58e516e765683ca783343e10ec15144 = L.marker(
+                [52.215786, 11.250767],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_7a26de87562b678f1f941d7cb7e247a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c58e516e765683ca783343e10ec15144.setIcon(icon_7a26de87562b678f1f941d7cb7e247a1);
+        
+    
+        var popup_5581259f4e45feb952884ff9768a6223 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9772f9a420f4d41fdb3357ec30ad2135 = $(`<div id="html_9772f9a420f4d41fdb3357ec30ad2135" style="width: 100.0%; height: 100.0%;">M1 Erxleben Dieselpreis 1.509</div>`)[0];
+                popup_5581259f4e45feb952884ff9768a6223.setContent(html_9772f9a420f4d41fdb3357ec30ad2135);
+            
+        
+
+        marker_c58e516e765683ca783343e10ec15144.bindPopup(popup_5581259f4e45feb952884ff9768a6223)
+        ;
+
+        
+    
+    
+            var marker_70ce79bc9884fd19cefca44f035177ba = L.marker(
+                [52.25226747, 10.9913089],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_ee958c589d30f1931fbdb9ba4915bd6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70ce79bc9884fd19cefca44f035177ba.setIcon(icon_ee958c589d30f1931fbdb9ba4915bd6c);
+        
+    
+        var popup_5f1edfce17ff1e99a1f65b8d78838329 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57f78147475d4e21625c9da99aa0fe2f = $(`<div id="html_57f78147475d4e21625c9da99aa0fe2f" style="width: 100.0%; height: 100.0%;">Sack-Helmstedt (1-7) Dieselpreis 1.519</div>`)[0];
+                popup_5f1edfce17ff1e99a1f65b8d78838329.setContent(html_57f78147475d4e21625c9da99aa0fe2f);
+            
+        
+
+        marker_70ce79bc9884fd19cefca44f035177ba.bindPopup(popup_5f1edfce17ff1e99a1f65b8d78838329)
+        ;
+
+        
+    
+    
+            var marker_62c943d366bae4512df5675605a46419 = L.marker(
+                [52.036264, 11.244361],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_4dd44fc2ae524f207ee8a4e0e4899490 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62c943d366bae4512df5675605a46419.setIcon(icon_4dd44fc2ae524f207ee8a4e0e4899490);
+        
+    
+        var popup_341247f1a96d9f600053f74b9411d29d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66760c04024d065e8db0ae75e1f61afa = $(`<div id="html_66760c04024d065e8db0ae75e1f61afa" style="width: 100.0%; height: 100.0%;">Kühling Transporte Dieselpreis 1.519</div>`)[0];
+                popup_341247f1a96d9f600053f74b9411d29d.setContent(html_66760c04024d065e8db0ae75e1f61afa);
+            
+        
+
+        marker_62c943d366bae4512df5675605a46419.bindPopup(popup_341247f1a96d9f600053f74b9411d29d)
+        ;
+
+        
+    
+    
+            var marker_70447c9e7da705ad5da628ee14c75052 = L.marker(
+                [52.24654388428, 10.99626922607],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_055ac2953fec14eb1368d1c925291590 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70447c9e7da705ad5da628ee14c75052.setIcon(icon_055ac2953fec14eb1368d1c925291590);
+        
+    
+        var popup_897bbde24afe5fc94e62926a6e1a8940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edc0b15cb39790f418df0a1acc90dc95 = $(`<div id="html_edc0b15cb39790f418df0a1acc90dc95" style="width: 100.0%; height: 100.0%;">Helmstedt Dieselpreis 1.529</div>`)[0];
+                popup_897bbde24afe5fc94e62926a6e1a8940.setContent(html_edc0b15cb39790f418df0a1acc90dc95);
+            
+        
+
+        marker_70447c9e7da705ad5da628ee14c75052.bindPopup(popup_897bbde24afe5fc94e62926a6e1a8940)
+        ;
+
+        
+    
+    
+            var marker_41ef7bb1d7446fcd600cde07ccc04b47 = L.marker(
+                [52.028477, 11.246092],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_27a6fd7059595350e6c58f68ad097ec5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41ef7bb1d7446fcd600cde07ccc04b47.setIcon(icon_27a6fd7059595350e6c58f68ad097ec5);
+        
+    
+        var popup_634dd81ada7f23549bcc27606df94dab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00d4c3031c4ab6787c22f386970d5ff5 = $(`<div id="html_00d4c3031c4ab6787c22f386970d5ff5" style="width: 100.0%; height: 100.0%;">TotalEnergies Oschersleben Dieselpreis 1.529</div>`)[0];
+                popup_634dd81ada7f23549bcc27606df94dab.setContent(html_00d4c3031c4ab6787c22f386970d5ff5);
+            
+        
+
+        marker_41ef7bb1d7446fcd600cde07ccc04b47.bindPopup(popup_634dd81ada7f23549bcc27606df94dab)
+        ;
+
+        
+    
+    
+            var marker_ec0019984c2ecac8b755109f97090d7b = L.marker(
+                [52.027576, 11.251186],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_5396fd5b7d023a27e0a35ed262bbcd8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec0019984c2ecac8b755109f97090d7b.setIcon(icon_5396fd5b7d023a27e0a35ed262bbcd8b);
+        
+    
+        var popup_261c99e82568f550848bc4a35b6c1078 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07b51cbc09a922c5bff81464a88987db = $(`<div id="html_07b51cbc09a922c5bff81464a88987db" style="width: 100.0%; height: 100.0%;">TEC GmbH Dieselpreis 1.529</div>`)[0];
+                popup_261c99e82568f550848bc4a35b6c1078.setContent(html_07b51cbc09a922c5bff81464a88987db);
+            
+        
+
+        marker_ec0019984c2ecac8b755109f97090d7b.bindPopup(popup_261c99e82568f550848bc4a35b6c1078)
+        ;
+
+        
+    
+    
+            var marker_bc2938a191a16287116e5a3518d69f87 = L.marker(
+                [52.0811, 11.12909],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_99882df3b6ae1f3b67fb22b1cbacd6ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc2938a191a16287116e5a3518d69f87.setIcon(icon_99882df3b6ae1f3b67fb22b1cbacd6ce);
+        
+    
+        var popup_ad39c5127b7601c06177789d8f440786 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05f2f9b6510eef6f62ac39612db367aa = $(`<div id="html_05f2f9b6510eef6f62ac39612db367aa" style="width: 100.0%; height: 100.0%;">TEC GmbH Dieselpreis 1.539</div>`)[0];
+                popup_ad39c5127b7601c06177789d8f440786.setContent(html_05f2f9b6510eef6f62ac39612db367aa);
+            
+        
+
+        marker_bc2938a191a16287116e5a3518d69f87.bindPopup(popup_ad39c5127b7601c06177789d8f440786)
+        ;
+
+        
+    
+    
+            var marker_03edb24d3ffd15d7e8ae41e7e991e84e = L.marker(
+                [52.0288239, 11.24598],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_59c0f0092d89540a4937662e693920d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03edb24d3ffd15d7e8ae41e7e991e84e.setIcon(icon_59c0f0092d89540a4937662e693920d1);
+        
+    
+        var popup_697c8e8f7107f3311af0140cc3c8b2cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b83e6c3719df67f14e8b13fa0f96e5af = $(`<div id="html_b83e6c3719df67f14e8b13fa0f96e5af" style="width: 100.0%; height: 100.0%;">Aral Tankstelle Dieselpreis 1.549</div>`)[0];
+                popup_697c8e8f7107f3311af0140cc3c8b2cd.setContent(html_b83e6c3719df67f14e8b13fa0f96e5af);
+            
+        
+
+        marker_03edb24d3ffd15d7e8ae41e7e991e84e.bindPopup(popup_697c8e8f7107f3311af0140cc3c8b2cd)
+        ;
+
+        
+    
+    
+            var marker_19e22f89c5906501a7ef8a33f46e323a = L.marker(
+                [52.147704, 11.225967],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_43dda08470d21be6ba2c0e178a3540ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_19e22f89c5906501a7ef8a33f46e323a.setIcon(icon_43dda08470d21be6ba2c0e178a3540ae);
+        
+    
+        var popup_4b190c90222c37f9cfa0d058edd54418 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4a622862816e545425c10f6c46eff25 = $(`<div id="html_e4a622862816e545425c10f6c46eff25" style="width: 100.0%; height: 100.0%;">Tankstelle Eilsleben Dieselpreis 1.559</div>`)[0];
+                popup_4b190c90222c37f9cfa0d058edd54418.setContent(html_e4a622862816e545425c10f6c46eff25);
+            
+        
+
+        marker_19e22f89c5906501a7ef8a33f46e323a.bindPopup(popup_4b190c90222c37f9cfa0d058edd54418)
+        ;
+
+        
+    
+    
+            var marker_21a6822c103b6881b38556280077d5f4 = L.marker(
+                [52.21763, 11.02783],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_fbe87a815d9583b7e6758232a06d1bda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21a6822c103b6881b38556280077d5f4.setIcon(icon_fbe87a815d9583b7e6758232a06d1bda);
+        
+    
+        var popup_2a80ac1b1b4deed5a89b6a881d16c21a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd24dc500c2d8840afc94e664a6696a7 = $(`<div id="html_dd24dc500c2d8840afc94e664a6696a7" style="width: 100.0%; height: 100.0%;">Supermarkt-Tankstelle HELMSTEDT MAGDEBURGER BERG 1 Dieselpreis 1.559</div>`)[0];
+                popup_2a80ac1b1b4deed5a89b6a881d16c21a.setContent(html_dd24dc500c2d8840afc94e664a6696a7);
+            
+        
+
+        marker_21a6822c103b6881b38556280077d5f4.bindPopup(popup_2a80ac1b1b4deed5a89b6a881d16c21a)
+        ;
+
+        
+    
+    
+            var marker_503e847d4d37ee01987911c05115c8e8 = L.marker(
+                [52.2443, 10.9912],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_c2c7c7c201ddd51feced80c057de24d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_503e847d4d37ee01987911c05115c8e8.setIcon(icon_c2c7c7c201ddd51feced80c057de24d4);
+        
+    
+        var popup_a429f968f4d4f3314ebfcc9292051948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25d3b312ab73c38923712dc3a7d914e2 = $(`<div id="html_25d3b312ab73c38923712dc3a7d914e2" style="width: 100.0%; height: 100.0%;">team Tankautomat Helmstedt Dieselpreis 1.559</div>`)[0];
+                popup_a429f968f4d4f3314ebfcc9292051948.setContent(html_25d3b312ab73c38923712dc3a7d914e2);
+            
+        
+
+        marker_503e847d4d37ee01987911c05115c8e8.bindPopup(popup_a429f968f4d4f3314ebfcc9292051948)
+        ;
+
+        
+    
+    
+            var marker_1605eafc8aa8fbe3ca9aad3b6e9429fc = L.marker(
+                [52.096901, 11.307616],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_b494fdd00f736ee02e07d56d027ae05d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1605eafc8aa8fbe3ca9aad3b6e9429fc.setIcon(icon_b494fdd00f736ee02e07d56d027ae05d);
+        
+    
+        var popup_99cc645b87573737401d4281db768fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da9c77fb7a6ed1748b0a5e287869bf15 = $(`<div id="html_da9c77fb7a6ed1748b0a5e287869bf15" style="width: 100.0%; height: 100.0%;">Tankstelle Seehausen Dieselpreis 1.559</div>`)[0];
+                popup_99cc645b87573737401d4281db768fb4.setContent(html_da9c77fb7a6ed1748b0a5e287869bf15);
+            
+        
+
+        marker_1605eafc8aa8fbe3ca9aad3b6e9429fc.bindPopup(popup_99cc645b87573737401d4281db768fb4)
+        ;
+
+        
+    
+    
+            var marker_8aa050fde72a16a4a2e35e5de6b43466 = L.marker(
+                [52.215668, 11.078711],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_7b293c79dc6d3b00446d46061bbb3a38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8aa050fde72a16a4a2e35e5de6b43466.setIcon(icon_7b293c79dc6d3b00446d46061bbb3a38);
+        
+    
+        var popup_71a8eeee490b8a8bac107a5c145d3f14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31c7fff08fa47fc951f612e78903cf25 = $(`<div id="html_31c7fff08fa47fc951f612e78903cf25" style="width: 100.0%; height: 100.0%;">Esso Tankstelle Dieselpreis 1.569</div>`)[0];
+                popup_71a8eeee490b8a8bac107a5c145d3f14.setContent(html_31c7fff08fa47fc951f612e78903cf25);
+            
+        
+
+        marker_8aa050fde72a16a4a2e35e5de6b43466.bindPopup(popup_71a8eeee490b8a8bac107a5c145d3f14)
+        ;
+
+        
+    
+    
+            var marker_b29229f5ee048ca822cd251fde9fa252 = L.marker(
+                [52.2243462, 11.01388],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_f6e805129074657c47103ee6b4d9d7ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b29229f5ee048ca822cd251fde9fa252.setIcon(icon_f6e805129074657c47103ee6b4d9d7ef);
+        
+    
+        var popup_f37101af34e3a7f196bd36462c7ec2f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58b4ea5377d2e0f4648c3803f95d01cd = $(`<div id="html_58b4ea5377d2e0f4648c3803f95d01cd" style="width: 100.0%; height: 100.0%;">Aral Tankstelle Dieselpreis 1.569</div>`)[0];
+                popup_f37101af34e3a7f196bd36462c7ec2f9.setContent(html_58b4ea5377d2e0f4648c3803f95d01cd);
+            
+        
+
+        marker_b29229f5ee048ca822cd251fde9fa252.bindPopup(popup_f37101af34e3a7f196bd36462c7ec2f9)
+        ;
+
+        
+    
+    
+            var marker_992be024f2e84a6b279d4bca18368615 = L.marker(
+                [52.23871, 11.00015],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_38e89bb5e89e2eb5016911ee899b5d45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_992be024f2e84a6b279d4bca18368615.setIcon(icon_38e89bb5e89e2eb5016911ee899b5d45);
+        
+    
+        var popup_bb489a76602abfa2d5be3176f1235c0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b83ad6b2ab64054604ff1044f4bce0b = $(`<div id="html_1b83ad6b2ab64054604ff1044f4bce0b" style="width: 100.0%; height: 100.0%;">Aral Tankstelle Dieselpreis 1.569</div>`)[0];
+                popup_bb489a76602abfa2d5be3176f1235c0c.setContent(html_1b83ad6b2ab64054604ff1044f4bce0b);
+            
+        
+
+        marker_992be024f2e84a6b279d4bca18368615.bindPopup(popup_bb489a76602abfa2d5be3176f1235c0c)
+        ;
+
+        
+    
+    
+            var marker_7e636b490ce34c73fc2c0d9afc47e2b0 = L.marker(
+                [52.216802, 11.248236],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_fa0945cf6875a7ab6ab80b16f565a66b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e636b490ce34c73fc2c0d9afc47e2b0.setIcon(icon_fa0945cf6875a7ab6ab80b16f565a66b);
+        
+    
+        var popup_23011057ac59f685755a4526306f55fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0975087c56d8cde85131f47daa48c28 = $(`<div id="html_c0975087c56d8cde85131f47daa48c28" style="width: 100.0%; height: 100.0%;">star Tankstelle Dieselpreis 1.569</div>`)[0];
+                popup_23011057ac59f685755a4526306f55fd.setContent(html_c0975087c56d8cde85131f47daa48c28);
+            
+        
+
+        marker_7e636b490ce34c73fc2c0d9afc47e2b0.bindPopup(popup_23011057ac59f685755a4526306f55fd)
+        ;
+
+        
+    
+    
+            var marker_c97f87b9a96d287cb4b18d881993c401 = L.marker(
+                [52.23373, 10.99888],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_18d86bf48c09edd23665a2083ab8c637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c97f87b9a96d287cb4b18d881993c401.setIcon(icon_18d86bf48c09edd23665a2083ab8c637);
+        
+    
+        var popup_9ca7b3f906c74f1aa9010af0dcbaf0a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f10e19e365c6bfb85fba72028599e5d6 = $(`<div id="html_f10e19e365c6bfb85fba72028599e5d6" style="width: 100.0%; height: 100.0%;">Helmstedt, Triftweg 47 Dieselpreis 1.579</div>`)[0];
+                popup_9ca7b3f906c74f1aa9010af0dcbaf0a1.setContent(html_f10e19e365c6bfb85fba72028599e5d6);
+            
+        
+
+        marker_c97f87b9a96d287cb4b18d881993c401.bindPopup(popup_9ca7b3f906c74f1aa9010af0dcbaf0a1)
+        ;
+
+        
+    
+    
+            var marker_7533a5b7ee79d7d9c1667cc7e8ce6edc = L.marker(
+                [52.307912, 11.020209],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_2425a4a8ee16e58620e76b6dadc08e8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7533a5b7ee79d7d9c1667cc7e8ce6edc.setIcon(icon_2425a4a8ee16e58620e76b6dadc08e8b);
+        
+    
+        var popup_f7b78efab6783eab4a08f9b4a42cad40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_791267ef8430ec7fee921ace375e07b4 = $(`<div id="html_791267ef8430ec7fee921ace375e07b4" style="width: 100.0%; height: 100.0%;">Grasleben, Magdeburger Str. 21 Dieselpreis 1.579</div>`)[0];
+                popup_f7b78efab6783eab4a08f9b4a42cad40.setContent(html_791267ef8430ec7fee921ace375e07b4);
+            
+        
+
+        marker_7533a5b7ee79d7d9c1667cc7e8ce6edc.bindPopup(popup_f7b78efab6783eab4a08f9b4a42cad40)
+        ;
+
+        
+    
+    
+            var marker_54b827429c7e774824989141806dd53a = L.marker(
+                [52.2094154, 11.1330194],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_105be3bfa8c05b177ddb204d3d81853e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54b827429c7e774824989141806dd53a.setIcon(icon_105be3bfa8c05b177ddb204d3d81853e);
+        
+    
+        var popup_de7b1c191c593a2601a340112f843f7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98b665c401bbadfcb1216cb2c1f1b56e = $(`<div id="html_98b665c401bbadfcb1216cb2c1f1b56e" style="width: 100.0%; height: 100.0%;">Aral Tankstelle Dieselpreis 1.589</div>`)[0];
+                popup_de7b1c191c593a2601a340112f843f7b.setContent(html_98b665c401bbadfcb1216cb2c1f1b56e);
+            
+        
+
+        marker_54b827429c7e774824989141806dd53a.bindPopup(popup_de7b1c191c593a2601a340112f843f7b)
+        ;
+
+        
+    
+    
+            var marker_598aa59218355894f131ce85c145b3e8 = L.marker(
+                [52.1453056, 10.9674129],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_2748c1bd7e76435796125dc938539f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_598aa59218355894f131ce85c145b3e8.setIcon(icon_2748c1bd7e76435796125dc938539f3f);
+        
+    
+        var popup_e570e734d3f2fbe4a68ea260bc5188c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4b11a57004f3be31345530115211434 = $(`<div id="html_b4b11a57004f3be31345530115211434" style="width: 100.0%; height: 100.0%;">Aral Tankstelle Dieselpreis 1.589</div>`)[0];
+                popup_e570e734d3f2fbe4a68ea260bc5188c2.setContent(html_b4b11a57004f3be31345530115211434);
+            
+        
+
+        marker_598aa59218355894f131ce85c145b3e8.bindPopup(popup_e570e734d3f2fbe4a68ea260bc5188c2)
+        ;
+
+        
+    
+    
+            var marker_be712aa3758154773534b3da414f8789 = L.marker(
+                [52.134834, 10.950675],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_5f59d62d31ce50442e29385813009a61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be712aa3758154773534b3da414f8789.setIcon(icon_5f59d62d31ce50442e29385813009a61);
+        
+    
+        var popup_b53fef58775629ca8f7e9fc2bd814187 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c23b17904944ef48ad96fe99035adc = $(`<div id="html_c3c23b17904944ef48ad96fe99035adc" style="width: 100.0%; height: 100.0%;">Supermarkt C&C Schoeningen Hoiersdorfer Str. 6 Dieselpreis 1.589</div>`)[0];
+                popup_b53fef58775629ca8f7e9fc2bd814187.setContent(html_c3c23b17904944ef48ad96fe99035adc);
+            
+        
+
+        marker_be712aa3758154773534b3da414f8789.bindPopup(popup_b53fef58775629ca8f7e9fc2bd814187)
+        ;
+
+        
+    
+    
+            var marker_b5f6f9736257cc8726d12ca367a375f7 = L.marker(
+                [52.1938057, 11.2634907],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_fb84f47e32360f8d0ec60907a2fa789f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b5f6f9736257cc8726d12ca367a375f7.setIcon(icon_fb84f47e32360f8d0ec60907a2fa789f);
+        
+    
+        var popup_d93f78c17265009aa5756f1cf36313c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cf5b2fd96f9c87cc69168048b452768 = $(`<div id="html_2cf5b2fd96f9c87cc69168048b452768" style="width: 100.0%; height: 100.0%;">Aral Tankstelle Dieselpreis 1.589</div>`)[0];
+                popup_d93f78c17265009aa5756f1cf36313c0.setContent(html_2cf5b2fd96f9c87cc69168048b452768);
+            
+        
+
+        marker_b5f6f9736257cc8726d12ca367a375f7.bindPopup(popup_d93f78c17265009aa5756f1cf36313c0)
+        ;
+
+        
+    
+    
+            var marker_992271b534075bda2a5bf377ec153c43 = L.marker(
+                [52.309986, 11.053788],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_5e1ff5f4e9c746bce388d45906b23e6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_992271b534075bda2a5bf377ec153c43.setIcon(icon_5e1ff5f4e9c746bce388d45906b23e6b);
+        
+    
+        var popup_7dac08d720396dddf1e7a89c02524149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3af5a5ca2b0eaaf98e11b9ae7ab8e76d = $(`<div id="html_3af5a5ca2b0eaaf98e11b9ae7ab8e76d" style="width: 100.0%; height: 100.0%;">Shell Weferlingen An der Burg Dieselpreis 1.599</div>`)[0];
+                popup_7dac08d720396dddf1e7a89c02524149.setContent(html_3af5a5ca2b0eaaf98e11b9ae7ab8e76d);
+            
+        
+
+        marker_992271b534075bda2a5bf377ec153c43.bindPopup(popup_7dac08d720396dddf1e7a89c02524149)
+        ;
+
+        
+    
+    
+            var marker_2cd9b5a492c8c0cbfe9c049f0ec62fef = L.marker(
+                [51.960184, 11.121097],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_f249c6d74fb992a22a328798fa6a524a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cd9b5a492c8c0cbfe9c049f0ec62fef.setIcon(icon_f249c6d74fb992a22a328798fa6a524a);
+        
+    
+        var popup_47c137bb1dc2ecb68518a8b7c60780de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc0244c85724f5e20c83460c5f92eefe = $(`<div id="html_dc0244c85724f5e20c83460c5f92eefe" style="width: 100.0%; height: 100.0%;">Dörge Brennstoffe & Dieselpreis 1.609</div>`)[0];
+                popup_47c137bb1dc2ecb68518a8b7c60780de.setContent(html_dc0244c85724f5e20c83460c5f92eefe);
+            
+        
+
+        marker_2cd9b5a492c8c0cbfe9c049f0ec62fef.bindPopup(popup_47c137bb1dc2ecb68518a8b7c60780de)
+        ;
+
+        
+    
+    
+            var marker_ed44f8236d8aa9be6f8580e83e7daf20 = L.marker(
+                [52.140622, 11.105736],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_bdbbe02306c0f5d57e066ef21fe5bd10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed44f8236d8aa9be6f8580e83e7daf20.setIcon(icon_bdbbe02306c0f5d57e066ef21fe5bd10);
+        
+    
+        var popup_d3732b1146a03724aad30575d6492783 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd224e5956236ad89cecdaeb0c540632 = $(`<div id="html_cd224e5956236ad89cecdaeb0c540632" style="width: 100.0%; height: 100.0%;">TotalEnergies Voelpke Dieselpreis 1.619</div>`)[0];
+                popup_d3732b1146a03724aad30575d6492783.setContent(html_cd224e5956236ad89cecdaeb0c540632);
+            
+        
+
+        marker_ed44f8236d8aa9be6f8580e83e7daf20.bindPopup(popup_d3732b1146a03724aad30575d6492783)
+        ;
+
+        
+    
+    
+            var marker_ede571c7ca7e2ff740d5994f63d3596a = L.marker(
+                [52.22021, 11.0583353],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_1501da43f2fbbbc5a7262709eee11f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ede571c7ca7e2ff740d5994f63d3596a.setIcon(icon_1501da43f2fbbbc5a7262709eee11f89);
+        
+    
+        var popup_1dd247b8f37be67d30e3b8e35d077d6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe4f6688c4e8cdefc1643ff332ed8060 = $(`<div id="html_fe4f6688c4e8cdefc1643ff332ed8060" style="width: 100.0%; height: 100.0%;">Aral Tankstelle, BAT LAPPWALD NORD Dieselpreis 1.999</div>`)[0];
+                popup_1dd247b8f37be67d30e3b8e35d077d6b.setContent(html_fe4f6688c4e8cdefc1643ff332ed8060);
+            
+        
+
+        marker_ede571c7ca7e2ff740d5994f63d3596a.bindPopup(popup_1dd247b8f37be67d30e3b8e35d077d6b)
+        ;
+
+        
+    
+    
+            var marker_131cf9583c04479358a464a3f0617947 = L.marker(
+                [52.233784, 11.022592],
+                {}
+            ).addTo(map_fb7ff51a1aed7d72657ad2e0ec70533d);
+        
+    
+            var icon_3d7e976cb50a272114ac050a3175f658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_131cf9583c04479358a464a3f0617947.setIcon(icon_3d7e976cb50a272114ac050a3175f658);
+        
+    
+        var popup_826059586d9b57dec136b862f6d8a6c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dad958947349012d5d9a1950c4707dc5 = $(`<div id="html_dad958947349012d5d9a1950c4707dc5" style="width: 100.0%; height: 100.0%;">ENI Dieselpreis 1.999</div>`)[0];
+                popup_826059586d9b57dec136b862f6d8a6c7.setContent(html_dad958947349012d5d9a1950c4707dc5);
+            
+        
+
+        marker_131cf9583c04479358a464a3f0617947.bindPopup(popup_826059586d9b57dec136b862f6d8a6c7)
+        ;
+
+        
+    
+</script>
+</html>
